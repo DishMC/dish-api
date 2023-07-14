@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d703ef64-ffd7-4e6d-8600-e4c1f127f179" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../decompile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../decompile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generate_patches.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../patches/server/0001-Change-server-brand.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../static/build.gradle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../static/build.gradle.txt" afterDir="false" />
-    </list>
+    <list default="true" id="d703ef64-ffd7-4e6d-8600-e4c1f127f179" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -75,11 +71,15 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/iris/Documents/github/CraftOuja/decompiled-server&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/iris/Documents/github/CraftOuja/decompiled-server&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="net.ouja.api.event" />
       <recent name="net.ouja" />
     </key>
   </component>

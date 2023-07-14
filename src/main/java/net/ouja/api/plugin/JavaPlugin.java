@@ -1,11 +1,14 @@
 package net.ouja.api.plugin;
 
+import com.mojang.logging.LogUtils;
 import net.ouja.api.Server;
 import net.ouja.api.ouja;
+import org.slf4j.Logger;
 
 public abstract class JavaPlugin implements Plugin {
     private Server server = ouja.getServer();
     private ClassLoader classLoader;
+    private Logger logger = LogUtils.getLogger();
 
     @Override
     public void onEnable() {}
@@ -25,5 +28,9 @@ public abstract class JavaPlugin implements Plugin {
 
     public ClassLoader getClassLoader() {
         return classLoader;
+    }
+
+    public Logger getLogger() {
+        return logger;
     }
 }

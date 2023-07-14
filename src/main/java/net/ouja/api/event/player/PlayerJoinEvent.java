@@ -1,33 +1,23 @@
 package net.ouja.api.event.player;
 
 import net.ouja.api.Player;
-import net.ouja.api.event.Event;
 import net.ouja.api.event.EventListener;
-import net.ouja.api.event.Handlers;
+import org.jetbrains.annotations.Nullable;
 
-public class PlayerJoinEvent extends Event implements EventListener {
-    private Player player;
-    private static final Handlers handlers = new Handlers();
+public class PlayerJoinEvent extends PlayerEvent implements EventListener {
     private String joinMessage;
 
-    public PlayerJoinEvent(Player player) {
-        this.player = player;
-    }
-
-    public Player getPlayer() {
-        return player;
-    }
-
-    public void setJoinMessage(String joinMessage) {
+    public PlayerJoinEvent(Player player, String joinMessage) {
+        super(player);
         this.joinMessage = joinMessage;
     }
 
-    public String getJoinMessage() {
-        return this.joinMessage;
+    public void setJoinMessage(@Nullable String joinMessage) {
+        this.joinMessage = joinMessage;
     }
 
-    @Override
-    public Handlers getHandlers() {
-        return handlers;
+    @Nullable
+    public String getJoinMessage() {
+        return this.joinMessage;
     }
 }
