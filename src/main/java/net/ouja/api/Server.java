@@ -1,5 +1,6 @@
 package net.ouja.api;
 
+import net.ouja.api.commands.Command;
 import net.ouja.api.dedicated.ServerProperties;
 import net.ouja.api.event.EventListener;
 import org.jetbrains.annotations.NotNull;
@@ -33,5 +34,9 @@ public interface Server {
     @NotNull
     public ArrayList<Player> getOnlinePlayers();
 
-    public void registerEvent(EventListener clazz, Class clazz1);
+    public void registerEvent(EventListener clazz, Class<?> clazz1);
+
+    public void registerCommand(Command command);
+
+    public void broadcast(String message);
 }
