@@ -1,11 +1,11 @@
 package net.ouja.api;
 
-public class ouja {
+public class DishAPI {
     private static Server server;
-    private static String apiVersion = "1.20.1-R0.1-SNAPSHOT";
+    private static String apiVersion = "23w43b-R0-SNAPSHOT";
 
     public static void setServer(Server server) {
-        ouja.server = server;
+        DishAPI.server = server;
     }
 
     public static Server getServer() {
