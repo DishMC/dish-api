@@ -3,6 +3,7 @@ package net.ouja.api;
 import net.ouja.api.commands.Command;
 import net.ouja.api.dedicated.ServerProperties;
 import net.ouja.api.event.EventListener;
+import net.ouja.api.network.chat.Component;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -38,5 +39,5 @@ public interface Server {
 
     public void registerCommand(Command command);
 
-    public void broadcast(String message);
+    public void broadcast(Component component);
 }

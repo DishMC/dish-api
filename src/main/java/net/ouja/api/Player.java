@@ -1,5 +1,6 @@
 package net.ouja.api;
 
+import net.ouja.api.network.chat.Component;
 import net.ouja.api.world.Level;
 import org.jetbrains.annotations.NotNull;
 
@@ -31,7 +32,6 @@ public interface Player {
 
     /**
      * Sends the player a message
-     * @param message
      */
-    public void sendMessage(String message);
+    public void sendMessage(Component component);
 }
