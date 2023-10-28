@@ -2,7 +2,7 @@ package net.ouja.api;
 
 public class DishAPI {
     private static Server server;
-    private static String apiVersion = "23w43b-R0-SNAPSHOT";
+    private static String apiVersion = "23w43b-R1-SNAPSHOT";
 
     public static void setServer(Server server) {
         DishAPI.server = server;
