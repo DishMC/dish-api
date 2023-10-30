@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'maven-publish'
+    id 'org.ajoberstar.grgit' version '4.1.0'
 }
 
 group = 'net.ouja'
@@ -75,4 +76,24 @@ publishing {
             }
         }
     }
+}
+
+task generateVer {
+    doLast {
+        new File("$projectDir/src/main/resources/buildAPI.txt").text = getVersionMetadata()
+    }
+}
+
+def getVersionMetadata() {
+    def build_id = System.getenv("GITHUB_RUN_NUMBER")
+
+    if (grgit != null) {
+        def head = grgit.head()
+        def id = head.abbreviatedId
+
+        return "${version}-${id}"
+    }
+
+    // No tracking information could be found about the build
+    return "${version}-unknown"
 }
