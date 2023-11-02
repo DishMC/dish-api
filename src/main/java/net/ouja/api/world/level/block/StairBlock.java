@@ -1,6 +1,6 @@
 package net.ouja.api.world.level.block;
 
-public interface Stair extends Block {
+public interface StairBlock extends Block {
 
     public String direction();
 }

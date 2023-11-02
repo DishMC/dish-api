@@ -2,7 +2,7 @@ package net.ouja.api.world.level.block;
 
 import net.ouja.api.world.level.block.entity.SignText;
 
-public interface Sign {
+public interface SignBlock {
 
     /**
      * @return if the sign is a wall sign
