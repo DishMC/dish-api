@@ -62,7 +62,7 @@ publishing {
         mavenLocal()
 
         maven {
-            url "https://maven.ouja.net"
+            url rootProject.getProperty('MAVEN_URL') ?: "https://maven.ouja.net"
 
             authentication {
                 basic(BasicAuthentication)
