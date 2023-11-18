@@ -1,5 +1,7 @@
 package net.ouja.api.entity;
 
+import net.ouja.api.Player;
+import net.ouja.api.entity.boss.*;
 import net.ouja.api.entity.monster.*;
 import net.ouja.api.entity.neutral.*;
 import net.ouja.api.entity.passive.*;
@@ -81,7 +83,11 @@ public enum EntityTypes {
     ZOGLIN("zoglin", Zoglin.class, 70),
     ZOMBIE("zombie", Zombie.class, 71),
     ZOMBIE_HORSE("zombie_horse", ZombieHorse.class, 72),
-    ZOMBIE_VILLAGER("zombie_villager", ZombieVillager.class, 73);
+    ZOMBIE_VILLAGER("zombie_villager", ZombieVillager.class, 73),
+    ENDER_DRAGON("ender_dragon", EnderDragon.class, 74),
+    WITHER("wither", Wither.class, 75),
+    BREEZE("breeze", Breeze.class, 76),
+    PLAYER("player", Player.class, 77);
 
     private String name;
     private Class clazz;
