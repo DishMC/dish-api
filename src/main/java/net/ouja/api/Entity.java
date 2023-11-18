@@ -35,4 +35,12 @@ public interface Entity {
      * @return the UUID of the entity
      */
     public UUID getUUID();
+
+    public float getHealth();
+
+    /**
+     * Sets the health of the entity
+     * @param health Minimum is 0.0f, Maximum is 1.0f
+     */
+    public void setHealth(float health);
 }

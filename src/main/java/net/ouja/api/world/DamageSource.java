@@ -6,7 +6,7 @@ import javax.annotation.Nullable;
 
 public interface DamageSource {
     /**
-     * @return the causing entity of the damage
+     * @return the entity that caused the damage
      */
     @Nullable
     public Entity getEntity();
