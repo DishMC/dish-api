@@ -2,8 +2,10 @@ package net.ouja.api;
 
 import net.ouja.api.network.chat.Component;
 import net.ouja.api.world.Level;
+import net.ouja.api.world.level.block.BlockPos;
 import org.jetbrains.annotations.NotNull;
 
+import javax.annotation.Nullable;
 import java.util.UUID;
 
 public interface Player {
@@ -34,4 +36,10 @@ public interface Player {
      * Sends the player a message
      */
     public void sendMessage(Component component);
+
+    /**
+     * @return the last known death location
+     */
+    @Nullable
+    public BlockPos lastDeathLocation();
 }
