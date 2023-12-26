@@ -1,6 +1,6 @@
 package net.ouja.api.world;
 
-import net.ouja.api.Player;
+import net.ouja.api.entity.Player;
 
 import java.util.List;
 

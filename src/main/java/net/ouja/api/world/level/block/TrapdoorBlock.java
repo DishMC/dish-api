@@ -1,6 +1,6 @@
 package net.ouja.api.world.level.block;
 
-import net.ouja.api.Player;
+import net.ouja.api.entity.Player;
 
 import javax.annotation.Nullable;
 

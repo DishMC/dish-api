@@ -1,6 +1,6 @@
 package net.ouja.api.event.entity;
 
-import net.ouja.api.Entity;
+import net.ouja.api.entity.Entity;
 import net.ouja.api.event.EventListener;
 import net.ouja.api.network.chat.Component;
 import net.ouja.api.world.DamageSource;

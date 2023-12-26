@@ -1,6 +1,4 @@
-package net.ouja.api;
-
-import net.ouja.api.entity.EntityTypes;
+package net.ouja.api.entity;
 
 import java.util.UUID;
 

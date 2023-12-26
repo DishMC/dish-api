@@ -1,6 +1,6 @@
 package net.ouja.api.event.player;
 
-import net.ouja.api.Player;
+import net.ouja.api.entity.Player;
 
 public class PlayerEvent {
     private Player player;

@@ -1,6 +1,6 @@
 package net.ouja.api.commands;
 
-import net.ouja.api.Player;
+import net.ouja.api.entity.Player;
 
 public interface Command {
 

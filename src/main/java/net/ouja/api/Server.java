@@ -3,6 +3,7 @@ package net.ouja.api;
 import net.ouja.api.auth.GameProfile;
 import net.ouja.api.commands.Command;
 import net.ouja.api.dedicated.ServerProperties;
+import net.ouja.api.entity.Player;
 import net.ouja.api.event.EventListener;
 import net.ouja.api.network.chat.Component;
 import net.ouja.api.server.players.BanEntry;

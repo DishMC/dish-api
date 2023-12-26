@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'net.ouja'
-version = '23w51b-R0.1-SNAPSHOT'
+version = '23w51b-R0.2-SNAPSHOT'
 
 java {
     withJavadocJar()

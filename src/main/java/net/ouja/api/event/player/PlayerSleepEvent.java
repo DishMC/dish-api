@@ -1,6 +1,6 @@
 package net.ouja.api.event.player;
 
-import net.ouja.api.Player;
+import net.ouja.api.entity.Player;
 import net.ouja.api.event.CancellableEvent;
 import net.ouja.api.event.EventListener;
 import net.ouja.api.world.level.block.BlockPos;

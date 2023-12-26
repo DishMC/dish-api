@@ -1,6 +1,5 @@
 package net.ouja.api.entity;
 
-import net.ouja.api.Entity;
 import net.ouja.api.world.item.ItemStack;
 
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package net.ouja.api;
+package net.ouja.api.entity;
 
 import net.ouja.api.network.chat.Component;
 import net.ouja.api.world.Level;

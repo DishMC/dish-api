@@ -1,6 +1,5 @@
 package net.ouja.api.entity;
 
-import net.ouja.api.Player;
 import net.ouja.api.entity.boss.*;
 import net.ouja.api.entity.monster.*;
 import net.ouja.api.entity.neutral.*;
