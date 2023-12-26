@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'net.ouja'
-version = '1.20.2-R0-SNAPSHOT'
+version = '1.20.4-R0.2-SNAPSHOT'
 
 java {
     withJavadocJar()
@@ -33,14 +33,12 @@ dependencies {
     implementation 'io.netty:netty-resolver:4.1.82.Final'
     implementation 'io.netty:netty-transport:4.1.82.Final'
     implementation 'io.netty:netty-transport-classes-epoll:4.1.82.Final'
-//    implementation 'netty-transport-native-unix-common:4.1.82.Final'
     implementation 'it.unimi.dsi:fastutil-core:8.5.9'
     implementation 'net.java.dev.jna:jna:5.12.1'
     implementation 'net.java.dev.jna:jna-platform:5.12.1'
     implementation 'net.sf.jopt-simple:jopt-simple:5.0.4'
     implementation 'org.apache.commons:commons-lang3:3.12.0'
     implementation 'org.apache.logging.log4j:log4j:2.19.0'
-//    implementation 'org.apache.logging.log4j:log4j-impl:2.19.0'
     implementation 'org.slf4j:slf4j-api:2.0.1'
     implementation 'org.jetbrains:annotations:24.0.0'
 }
@@ -64,7 +62,11 @@ publishing {
         mavenLocal()
 
         maven {
-            url "https://maven.ouja.net"
+            if (rootProject.hasProperty('MAVEN_URL')) {
+                url = rootProject.getProperty('MAVEN_URL')
+            } else {
+                url = "https://maven.ouja.net"
+            }
 
             authentication {
                 basic(BasicAuthentication)
