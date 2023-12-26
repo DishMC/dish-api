@@ -42,4 +42,26 @@ public interface Player {
      */
     @Nullable
     public BlockPos lastDeathLocation();
+
+    /**
+     * @return the player's reach
+     */
+    public double getReach();
+
+    /**
+     * @return the player's scale
+     */
+    public float getScale();
+
+    /**
+     * Sets the reach of the player
+     * @param reach new reach
+     */
+    public void setReach(double reach);
+
+    /**
+     * Sets the scale of the player
+     * @param scale new scale
+     */
+    public void setScale(float scale);
 }
