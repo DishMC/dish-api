@@ -1,6 +1,7 @@
 package net.ouja.api.entity;
 
 import net.ouja.api.network.chat.Component;
+import net.ouja.api.server.level.ClientInformation;
 import net.ouja.api.world.Level;
 import net.ouja.api.world.level.block.BlockPos;
 import org.jetbrains.annotations.NotNull;
@@ -64,4 +65,10 @@ public interface Player {
      * @param scale new scale
      */
     public void setScale(float scale);
+
+    /**
+     * @return the player's client information {@link ClientInformation}
+     */
+    @NotNull
+    public ClientInformation getClientInformation();
 }
