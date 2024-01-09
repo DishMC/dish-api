@@ -9,4 +9,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 public @interface CommandListener {
     public String name();
+
+    public boolean allowConsole();
 }
