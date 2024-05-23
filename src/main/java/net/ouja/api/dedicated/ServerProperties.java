@@ -85,4 +85,9 @@ public interface ServerProperties {
      * @return if white-list is enabled on the server
      */
     public boolean isWhitelistEnabled();
+
+    /**
+     * @return if the server accepts server transfers
+     */
+    public boolean acceptsServerTransfers();
 }
