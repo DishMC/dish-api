@@ -6,7 +6,7 @@ import net.ouja.api.entity.neutral.*;
 import net.ouja.api.entity.passive.*;
 
     /**
-     * Entity typeIds are gathered from the List of mobs https://minecraft.fandom.com/wiki/Mob
+     * Entity typeIds are gathered from the List of mobs https://minecraft.wiki/w/Mob
      */
 public enum EntityTypes {
     ALLAY("allay", Allay.class),
@@ -15,6 +15,7 @@ public enum EntityTypes {
     BAT("bat", Bat.class),
     BEE("bee", Bee.class),
     BLAZE("blaze", Blaze.class),
+    BOGGED("bogged", Bogged.class),
     BREEZE("breeze", Breeze.class),
     CAMEL("camel", Camel.class),
     CAT("cat", Cat.class),

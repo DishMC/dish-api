@@ -1,9 +1,6 @@
 package net.ouja.api.entity.passive;
 
-public interface Sheep {
+import net.ouja.api.entity.Shearable;
 
-    /**
-     * @return if the sheep is sheared
-     */
-    public boolean isSheared();
+public interface Sheep extends Shearable {
 }
