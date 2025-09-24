@@ -6,6 +6,7 @@ import net.ouja.api.dedicated.ServerProperties;
 import net.ouja.api.entity.Player;
 import net.ouja.api.event.EventListener;
 import net.ouja.api.network.chat.Component;
+import net.ouja.api.server.ServerLink;
 import net.ouja.api.server.players.BanEntry;
 import org.jetbrains.annotations.NotNull;
 
@@ -56,4 +57,11 @@ public interface Server {
      * @return {@link BanEntry}
      */
     public BanEntry getBanEntry(GameProfile profile);
+
+    /**
+     * Returns the server's links
+     * @since 1.21-R0.1
+     * @return an array list which contains {@link ServerLink}
+     */
+    public ArrayList<ServerLink> getServerLinks();
 }
