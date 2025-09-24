@@ -1,11 +1,11 @@
 plugins {
     id 'java'
     id 'maven-publish'
-    id 'org.ajoberstar.grgit' version '4.1.0'
+    id 'org.ajoberstar.grgit' version '5.3.3'
 }
 
 group = 'net.ouja'
-version = '1.21-R0.2-SNAPSHOT'
+version = '1.21.8-R0.2-SNAPSHOT'
 
 java {
     withJavadocJar()

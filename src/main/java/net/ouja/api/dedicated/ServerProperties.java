@@ -21,16 +21,6 @@ public interface ServerProperties {
     public String getMotd();
 
     /**
-     * @return if the server can spawn animals
-     */
-    public boolean canSpawnAnimals();
-
-    /**
-     * @return if the server can spawn npcs
-     */
-    public boolean canSpawnNpcs();
-
-    /**
      * @return if pvp is enabled on the server
      */
     public boolean isPvPEnabled();
