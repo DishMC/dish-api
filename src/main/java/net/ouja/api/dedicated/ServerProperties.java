@@ -80,4 +80,14 @@ public interface ServerProperties {
      * @return if the server accepts server transfers
      */
     public boolean acceptsServerTransfers();
+
+    /**
+     * @return the bug report link
+     */
+    public String getBugReportLink();
+
+    /**
+     * @return when the server should pause when it is empty
+     */
+    public int getPauseWhenEmpty();
 }
